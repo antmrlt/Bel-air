@@ -16,7 +16,6 @@ body {
   padding: 20px 40px;
   border-radius: 50px;
   border: none;
-  /* margin-top: 50px; */
   cursor: pointer;
   color: black;
   text-decoration: none;
@@ -24,6 +23,14 @@ body {
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   background-color: #f5f5f5;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.0); /* Add a subtle shadow */
+}
+
+.button:hover {
+  background-color: #03dec0;
+  transform: translateY(-20px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .text {
