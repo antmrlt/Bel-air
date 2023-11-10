@@ -64,6 +64,10 @@ img {
     margin-bottom: 2vw;
   }
 
+  .resp {
+    margin: 20px;
+  }
+
   .button {
     margin-top: 20px;
     font-size: 2vw;
