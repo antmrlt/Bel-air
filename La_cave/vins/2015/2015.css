@@ -149,13 +149,8 @@ header h1 {
   font-size: 20px;
 }
 
-.img-spec {
+.w {
   max-width: 100%;
-  height: auto;
-}
-
-.w-l {
-  max-width: 400px;
 }
 
 .reverse-wrap {
@@ -325,7 +320,7 @@ footer {
   }
 
   header h1 {
-    margin: 10px 50px;
+    margin: 10px 10px;
   }
 
   /* FOOTER */
@@ -334,6 +329,10 @@ footer {
 
   .spec {
     padding: 25px 0px;
+  }
+
+  .spec-txt {
+    padding: 0px 20px;
   }
 
   /*footer*/
