@@ -10,6 +10,7 @@ body {
 .work {
   display: flex;
   align-items: center;
+  flex-wrap: wrap-reverse;
 }
 
 .button {
@@ -37,7 +38,7 @@ body {
   margin-right: 50px;
   margin-bottom: 50px;
   font-family: 'Roboto', sans-serif;
-  font-size: 40px;
+  font-size: 3vw;
 }
 
 .text h1 {
@@ -48,4 +49,24 @@ body {
 
 .blue {
   color: #03dec0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .text {
+    margin-right: 0;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+  }
+
+  .button {
+    margin-top: 20px;
+    font-size: 2vw;
+    padding: 2vw 4vw;
+  }
 }
