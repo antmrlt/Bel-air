@@ -105,6 +105,7 @@ header {
   gap: 80px;
   align-items: center;
   padding: 150px 0px 75px 0px;
+  flex-wrap: wrap;
 }
 
 header h1 {
@@ -114,6 +115,11 @@ header h1 {
 
 .w {
   width: 500px;
+  height: auto;
+}
+
+.img-head {
+  max-width: 100%;
   height: auto;
 }
 
@@ -127,6 +133,7 @@ header h1 {
   gap: 80px;
   align-items: center;
   padding: 75px 0px;
+  flex-wrap: wrap;
 }
 
 .spec-txt {
@@ -142,8 +149,17 @@ header h1 {
   font-size: 20px;
 }
 
+.img-spec {
+  max-width: 100%;
+  height: auto;
+}
+
 .w-l {
   max-width: 400px;
+}
+
+.reverse-wrap {
+  flex-wrap: wrap-reverse;
 }
 
 /* FOOTER */
@@ -281,55 +297,9 @@ footer {
 
 /* FORMAT PHONE */
 
-@media screen and (max-width:  1800px){
-
-}
-
 @media screen and (min-width:  800px){
   .menu-anime {
     display: none;
-  }
-}
-
-@media screen and (min-width:  480px){
-  .deco-fin {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1185px) {
-
-  /* HEADER */
-
-  .img-bottle {
-    height: 400px;
-  }
-  .title-left {
-    font-size: 200px;
-    margin-left: -80;
-    margin-top: 100px;
-  }
-
-  /* DIV 1 */
-
-  .div-1 {
-    justify-content: center;
-    padding: 25px 25px;
-  }
-  .txt-1 {
-    padding: 0px 0px;
-    max-width: 570px;
-    margin-left: 20px;
-    margin-top: 0px;
-  }
-  .div-1 img {
-    height: 250px;
-  }
-}
-
-@media screen and (max-width: 1007px) {
-  .txt-1 {
-    padding: 20px 0px;
   }
 }
 
@@ -347,17 +317,24 @@ footer {
 
   /* NAV PHONE */
 
-  /* CARD */
+  /* HEADER */
 
-  .body-card {
-    gap: 0px;
+  header {
+    padding: 150px 0px 5px 0px;
+    padding-bottom: 25px;
   }
 
-  .card {
-    box-shadow: none;
+  header h1 {
+    margin: 10px 50px;
   }
 
   /* FOOTER */
+
+  /* spec */
+
+  .spec {
+    padding: 25px 0px;
+  }
 
   /*footer*/
 
