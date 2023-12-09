@@ -100,32 +100,61 @@ nav .nav_in h1 {
 /* HEADER */
 
 .header {
+  position: relative; /* Add this line to make the ::before pseudo-element position relative to this */
   display: flex;
   justify-content: center;
   gap: 80px;
-  padding: 10% 7%;
+  padding: 13% 7%;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.header h1 {
-  font-size: 60px;
-  letter-spacing: -1px;
-  z-index: 1;
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('image/header.JPG');
+  background-size: 70% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* Adjust the opacity as needed */
+  z-index: -1;
 }
 
-.header h2 {
-  font-size: 50px;
-  color: black; opacity: 0.5;
-  margin-top: -20px;
+.header h1 {
+  font-size: 80px;
+  letter-spacing: -1px;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: black;
+  margin-top: -10px;
+  margin-left: 20px;
+  font-weight: bold;
 }
 
 .header-img {
-  
+  /* Add your styles for the header image */
 }
 
+.Baskerville {
+  font-weight: 100;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.Cinzel {
+  font-weight: 700;
+  font-family: 'Cinzel Decorative', serif;
+}
+
+
 .w-500 {
-  width: 500px;
+  width: 400px;
 }
 
 /* FIN HEADER */
