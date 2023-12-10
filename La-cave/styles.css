@@ -74,6 +74,14 @@ body {
 }
 
 @media screen and (max-width:  800px){
+    body {
+        background-color: rgb(224, 224, 224);
+    }
+
+    .carousel-content {
+        padding: 0px;
+    }
+
     #carousel-container {
         width: 80%;
     }
