@@ -37,13 +37,14 @@
 
 .card .txt p {
     font-size: 25px;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .card .bottom {
     position: absolute;
     bottom: 0;
-    width: 400px;
+    max-width: 350px;
+    width: 100%;
 }
 
 .card .bottom hr {
@@ -61,4 +62,16 @@
     font-size: 12px;
     margin-bottom: 30px;
     margin-top: 5px;
+}
+
+@media screen and (max-width:  1000px){
+    .card .bottom {
+        display: none;
+    }
+}
+
+@media screen and (max-width:  800px){
+    .card {
+        padding: 15px;
+    }
 }

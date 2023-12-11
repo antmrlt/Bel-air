@@ -1,39 +1,20 @@
 let currentIndex = 0;
 const totalSlides = document.querySelectorAll('.carousel-item').length;
 
-let touchStartX = 0;
-let touchEndX = 0;
-
-document.getElementById('carousel').addEventListener('touchstart', handleTouchStart, false);
-document.getElementById('carousel').addEventListener('touchmove', handleTouchMove, false);
-
-function handleTouchStart(event) {
-    touchStartX = event.touches[0].clientX;
-}
-
-function handleTouchMove(event) {
-    touchEndX = event.touches[0].clientX;
-    handleGesture();
-}
-
-function handleGesture() {
-    const gestureThreshold = 50; // Adjust this value to control the sensitivity of the swipe
-
-    if (touchEndX < touchStartX - gestureThreshold) {
-        // Swiped left
-        nextSlide();
-    } else if (touchEndX > touchStartX + gestureThreshold) {
-        // Swiped right
-        prevSlide();
-    }
-}
-
 function updateCarousel() {
     const carousel = document.getElementById('carousel');
-    const newTranslateValue = -currentIndex * (100 + 10) + '%'; // 20 is the margin between slides
+    let newTranslateValue;
+
+    if (window.innerWidth < 800) {
+        newTranslateValue = -currentIndex * (100 + 5) + '%';
+    } else {
+        newTranslateValue = -currentIndex * (100 + 10) + '%';
+    }
+
     carousel.style.transform = 'translateX(' + newTranslateValue + ')';
     updateButtonsVisibility();
 }
+
 
 function updateButtonsVisibility() {
     const prevButton = document.getElementById('prevButton');

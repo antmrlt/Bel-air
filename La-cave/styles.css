@@ -83,8 +83,12 @@ body {
 }
 
 @media screen and (max-width:  800px){
-    body {
+    /* body {
         background-color: rgb(224, 224, 224);
+    } */
+
+    #carousel {
+        gap: 5%;
     }
 
     .carousel-content {
