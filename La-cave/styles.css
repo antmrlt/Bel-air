@@ -10,7 +10,6 @@ body {
     margin: 100px auto 100px auto;
     overflow: hidden;
     position: relative;
-    background-color: rgb(224, 224, 224);
 }
 
 #carousel {
@@ -28,7 +27,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
+    align-items: center;
 }
 
 .carousel-content .txt-content {
@@ -54,6 +53,8 @@ body {
 }
 
 .carousel-button {
+    margin-left: 20px;
+    margin-right: 20px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -63,6 +64,14 @@ body {
     border: none;
     padding: 10px;
     color: #333;
+
+    width: 50px;
+
+    border-radius: 5px;
+}
+
+.carousel-button:active {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 #prev {
