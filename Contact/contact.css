@@ -1,0 +1,103 @@
+body {
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+header {
+    margin-top: 100px;
+    text-align: center;
+}
+
+header hr {
+    width: 50px;
+    height: 3px;
+    border: none;
+    background-color: gold;
+}
+
+.contact-container {
+    margin-top: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.contact-container .img img {
+    max-width: 510px;
+}
+
+.cube-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cube-top, .cube-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cube {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 210px;
+    height: 210px;
+
+    background-color: #272a32;
+}
+
+.cube h1 {
+    font-size: 20px;
+    color: #8f9094;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.cube p {
+    color: #b0b0b3;
+    text-align: center;
+}
+
+.cube a {
+    color: #8f9094;
+    text-decoration: none;
+}
+
+.round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #8f9094;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+@media screen and (max-width: 520px) {
+    .contact-container .img img {
+        max-width: 300px;
+    }
+
+    .cube-top, .cube-bottom {
+        justify-content: center;
+    }
+
+    .cube {
+        width: 260px;
+        height: 260px;
+    }
+}
