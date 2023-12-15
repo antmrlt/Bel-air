@@ -1,0 +1,114 @@
+nav {
+    width: 100%;
+
+    background-color: rgba(red, green, blue, 0);
+}
+
+.nav_in {
+    margin: auto;
+    max-width: 980px;
+    height: 100%;
+    padding: 0px 22px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(red, green, blue, 0);
+}
+
+.nav-links-container {
+    display: flex;
+    align-items: center;
+}
+
+nav .nav_in p {
+    margin-right: 20px;
+    font-size: 15px;
+    margin-top: 18px;
+    color: rgb(255, 255, 255);
+}
+
+nav .nav_in .a {
+    text-decoration: none;
+    color: rgb(126, 126, 126);
+}
+
+nav .a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+/* nav .nav_in h1 {
+    font-size: 21px;
+    margin: 0;
+    display: flex;
+    line-height: 1.14286;
+    display: block;
+    float: left;
+    margin: 14px -14px;
+    padding: 0;
+    font-weight: 500;
+    opacity: .91;
+    
+    color: white;
+}
+
+.svg_h1 {
+    width: 20;
+    height: 20;
+}
+
+.nav_icon {
+    width: auto;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 20px;
+} */
+
+/* NAV MENU PHONE
+
+.menu-anime {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 52px;
+    position: fixed;
+    z-index: 50;
+    transition: 1.5s height, 1s background-color;
+    overflow: hidden;
+    -webkit-backdrop-filter: saturate(180%) blur(5px);
+    backdrop-filter: saturate(180%) blur(5px);
+    background-color: rgba(255,255,255,0.7);
+}
+
+.menu-anime p {
+    text-align: center;
+}
+
+.menu-anime a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* FIN NAV BARRE */
+
+@media screen and (min-width:  800px){
+    .menu-anime {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    /* NAV PHONE */
+
+    .a {
+        display: none;
+    }
+    nav .nav_in h1 {
+        font-size: 17px;
+        margin: 17px -14px;
+    }
+} */
