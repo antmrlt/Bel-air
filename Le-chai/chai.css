@@ -189,10 +189,19 @@ body {
 
 @media screen and (max-width: 500px) {
     .chai-post-card-container .chai-post-card img {
-        width: 380px;
+        width: 300px;
+    }
+
+    .chai-post-card-container .chai-post-card .txt {
+        padding: 0 20px;
     }
 
     .chai-pre-card hr {
         margin-bottom: 10px;
+    }
+
+    .chai-card {
+        width: 260px;
+        height: 330px;
     }
 }
