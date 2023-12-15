@@ -64,6 +64,7 @@ body {
 
 .chai-pre-card h1 {
     margin: 50px 0px 10px 0px;
+    text-align: center;
 }
 
 .chai-pre-card p {
@@ -171,11 +172,13 @@ body {
 
 @media screen and (max-width: 800px) {
     .chai-container {
-        margin-top: 50px;
+        margin-top: 60px;
+        padding-bottom: 0;
     }
 
     .head h1 {
-        font-size: 15vw;
+        font-size: 18vw;
+        margin-top: 0;
     }
 
     .head h3 {
@@ -184,6 +187,15 @@ body {
 
     .chai-pre-card h1 {
         margin: 0px 0px 10px 0px;
+        font-size: 28px;
+    }
+
+    .chai-post-card-container .chai-post-card .txt h1 {
+        font-size: 25px;
+    }
+
+    .chai-pre-card hr {
+        margin-bottom: 10px;
     }
 }
 
@@ -194,10 +206,6 @@ body {
 
     .chai-post-card-container .chai-post-card .txt {
         padding: 0 20px;
-    }
-
-    .chai-pre-card hr {
-        margin-bottom: 10px;
     }
 
     .chai-card {
