@@ -38,7 +38,7 @@ header .hr-container button {
     justify-content: center;
     align-items: center;
 
-    gap: 50px;
+    gap: 10px;
 }
 
 .contact-container .img img {
@@ -51,7 +51,8 @@ header .hr-container button {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 510px;
+    width: 470px;
+    padding: 20px;
 }
 
 .form-container .contain {
