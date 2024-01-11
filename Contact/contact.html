@@ -39,14 +39,42 @@
 
         <header>
             <h1>NOUS CONTACTER</h1>
-            <hr>
+            <div class="hr-container">
+                <button id="left" onclick="changeDisplay('left')"></button>
+                <button id="right" onclick="changeDisplay('right')"></button>
+            </div>
         </header>
 
         <div class="contact-container">
             <div class="img">
                 <img src="../image/pro.jpg">
             </div>
-            <div class="cube-container">
+            <div class="form-container" id="form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="0b59be2f-e275-4166-af14-ff9bc6ff1d7a">
+                
+                    <div class="contain" id="first">
+                        <label for="name">Nom :</label>
+                        <input type="text" name="name" required>
+                    </div>
+
+                    <div class="contain">
+                        <label for="email">E-mail :</label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div class="contain">
+                        <label for="message">Message :</label>
+                        <textarea name="message" required></textarea>
+                    </div>
+
+                    <button type="submit">Envoyer</button>
+                
+                </form>          
+            </div>
+
+            <div class="cube-container" id="cube">
                 <div class="cube-top">
                     <div class="cube">
                         <h1>NOUS CONTACTER</h1>
@@ -92,6 +120,8 @@
         </footer>
   
         <script src="../js/menu.js"></script>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+        <script src="../js/contact.js"></script>
   
     </body>
 </html>

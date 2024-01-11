@@ -5,17 +5,30 @@ body {
     background-color: white;
 }
 
+/* HEADER */
+
 header {
     margin-top: 100px;
     text-align: center;
 }
 
-header hr {
+header .hr-container button {
     width: 50px;
     height: 3px;
     border: none;
     background-color: gold;
+    cursor: pointer;
 }
+
+#left {
+    opacity: 1;
+}
+
+#right {
+    opacity: 0.4;
+}
+
+/* CONTACT */
 
 .contact-container {
     margin-top: 50px;
@@ -25,15 +38,100 @@ header hr {
     justify-content: center;
     align-items: center;
 
-    gap: 10px;
+    gap: 50px;
 }
 
 .contact-container .img img {
     max-width: 510px;
 }
 
-.cube-container {
+/* FORM */
+
+.form-container {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 510px;
+}
+
+.form-container .contain {
+    display: flex;
+    flex-direction: column;
+
+    margin: 20px 0px;
+    gap: 10px;
+}
+
+#first {
+    margin: 0;
+}
+
+.form-container .contain label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-container .contain input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    color: #34495e;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.form-container .contain input:focus {
+    background-color: #d5d8dc;
+    color: #2c3e50;
+}
+
+.form-container .contain textarea {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    color: #34495e;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+
+    height: 150px;
+}
+
+.form-container .contain textarea:focus {
+    background-color: #d5d8dc;
+    color: #2c3e50;
+}
+
+.form-container button {
+    padding: 20px;
+    background-color: #272a32;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+    .contact-container {
+        gap: 10px;
+    }
+
+    .contact-container .img img {
+        max-width: 300px;
+    }
+
+    .form-container {
+        width: 300px;
+    }
+}
+
+/* CUBE */
+
+.cube-container {
+    display: none;
     flex-direction: column;
     gap: 10px;
 }
